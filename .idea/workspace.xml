@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42603903-b56f-4730-afa7-c1cbe2725aba" name="Changes" comment="java se lomlok">
+    <list default="true" id="42603903-b56f-4730-afa7-c1cbe2725aba" name="Changes" comment="README.md">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/dto/ERoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/BadRequest400.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/Cretad201.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/IcdException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/NotFound404.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/files/FilePathUrl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/icd/dao/LombokDeneme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icd/dto/LombokDeneme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +52,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/iscdr/IdeaProjects/TechJavaSE"
+    "last_opened_file_path": "C:/Users/iscdr/IdeaProjects/TechJavaSE",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.icd.exceptions" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,12 +84,20 @@
       <option name="project" value="LOCAL" />
       <updated>1755282570960</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="README.md">
+      <created>1755355232788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755355232788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commmit" />
     <MESSAGE value="java se lomlok" />
-    <option name="LAST_COMMIT_MESSAGE" value="java se lomlok" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
 </project>

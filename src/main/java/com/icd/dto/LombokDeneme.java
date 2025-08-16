@@ -1,4 +1,4 @@
-package com.icd.dao;
+package com.icd.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
