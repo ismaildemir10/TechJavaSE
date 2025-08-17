@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42603903-b56f-4730-afa7-c1cbe2725aba" name="Changes" comment="README.md">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/dto/ERoles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/BadRequest400.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/Cretad201.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/IcdException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/exceptions/NotFound404.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/files/FilePathUrl.java" afterDir="false" />
+    <list default="true" id="42603903-b56f-4730-afa7-c1cbe2725aba" name="Changes" comment="File">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/icd/files/FilePathDataImplement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/icd/dao/LombokDeneme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icd/dto/LombokDeneme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/icd/files/ILogTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icd/files/ILogTech.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,14 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/iscdr/IdeaProjects/TechJavaSE",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/iscdr/IdeaProjects/TechJavaSE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.icd.exceptions" />
@@ -91,13 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755355232788</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="File">
+      <created>1755357055215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755357055215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commmit" />
     <MESSAGE value="java se lomlok" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="File" />
+    <option name="LAST_COMMIT_MESSAGE" value="File" />
   </component>
 </project>
