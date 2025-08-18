@@ -6,10 +6,10 @@ public interface IFileLogTech {
     //LocaDateTİME
     public  String logTechLocalDateTime();
     //logTechFileWriter
-    public  String logTechFileReader(String fileName);
+    public  void logTechFileReader();
     public List<String> logTechFileList();
     public  String logTechFileCreate(String fileName);
-    public  String logTechFileWriter(String fileName);
+    public  void logTechFileWriter(String username,String password);
     public  String logTechFileDelete(String fileName);
     public  String logTechFileInformation();
 }
