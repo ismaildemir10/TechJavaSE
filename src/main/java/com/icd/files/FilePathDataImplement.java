@@ -3,7 +3,6 @@ package com.icd.files;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
@@ -64,8 +63,13 @@ public class FilePathDataImplement implements IFileLogTech{
     }
 
     @Override
-    public List<String> logTechFileList() {
-        return null;
+    public File[] logTechFileList() {
+        File fileList = new File(url);
+        for(File temp : fileList.listFiles()){
+            System.out.println(temp.getName());
+
+        }
+        return fileList.listFiles();
     }
 
     @Override
