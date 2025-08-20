@@ -8,8 +8,8 @@ public interface IFileLogTech {
     //logTechFileWriter
     public  void logTechFileReader();
     public File[] logTechFileList();
-    public  String logTechFileCreate(String fileName);
+    public void logTechFileCreate(String fileName);
     public  void logTechFileWriter(String username,String password);
-    public  String logTechFileDelete(String fileName);
-    public  String logTechFileInformation();
+    public void logTechFileDelete();
+    public void logTechFileInformation();
 }

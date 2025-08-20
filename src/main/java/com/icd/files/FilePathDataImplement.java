@@ -4,6 +4,7 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 import java.util.UUID;
 
 public class FilePathDataImplement implements IFileLogTech{
@@ -24,7 +25,7 @@ public class FilePathDataImplement implements IFileLogTech{
         this.file = new File(url);
         try {
             if (file.exists()){
-                System.out.println(url+" boyle bir dosya var");
+                System.err.println(url+" boyle bir dosya var");
             }else {
                 file.createNewFile();
                 System.out.println(url + "dosya oluşturuldu");
@@ -64,7 +65,7 @@ public class FilePathDataImplement implements IFileLogTech{
 
     @Override
     public File[] logTechFileList() {
-        File fileList = new File(url);
+        File fileList = new File(FilePathUrl.MY_CAR_FILE_PATH_URL);
         for(File temp : fileList.listFiles()){
             System.out.println(temp.getName());
 
@@ -73,8 +74,21 @@ public class FilePathDataImplement implements IFileLogTech{
     }
 
     @Override
-    public String logTechFileCreate(String fileName) {
-        return null;
+    public void logTechFileCreate(String url) {
+        this.url=fileDirectoryName.concat(filePathName);
+        this.file = new File(url);
+        try {
+            if (file.exists()){
+                System.err.println(url+" boyle bir dosya var");
+            }else {
+                file.createNewFile();
+                System.out.println(url + "dosya oluşturuldu");
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+
+        }
+
     }
 
     @Override
@@ -92,19 +106,64 @@ public class FilePathDataImplement implements IFileLogTech{
     }
 
     @Override
-    public String logTechFileDelete(String fileName) {
-        return null;
+    public void logTechFileDelete() {
+        Scanner scanner=new Scanner(System.in);
+        logTechFileList();
+        System.out.println("Lütfen silinecek dosyayı yazın ");
+        String fileName = scanner.nextLine().concat(".txt");
+        String url=fileDirectoryName.concat("\\").concat(fileName);
+        System.out.println("Dosya Uzantısı");
+        char chooise;
+        System.out.println(fileName+" Dosyayı silmek istiyomusunuz ? E/H");
+        chooise=scanner.nextLine().charAt(0);
+        if (chooise == 'e'|| chooise =='E'){
+            try {File fileDelete = new File(url);
+                if (fileDelete.exists()){
+                    fileDelete.delete();
+                    System.out.println(fileName+" dosyanız silindi");
+                }else {
+                    System.out.println(fileName+"olmayan dosya silinemez");
+                }
+
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+
+            }
+        }else {
+            System.out.println();
+        }
+
+
     }
 
     @Override
-    public String logTechFileInformation() {
-        return null;
+    public void logTechFileInformation() {
+        Scanner scannerFileInformation=new Scanner(System.in);
+        logTechFileList();
+        System.out.println("Lütfen bilgisini almak istediğin dosyayı yazın ");
+        String fileNameInformation = scannerFileInformation.nextLine().concat(".txt");
+        String url=fileDirectoryName.concat("\\").concat(fileNameInformation);
+        System.out.println("Dosya Uzantısı");
+        File file = new File(url);
+        System.out.println("Çalışabilinir mi "+file.canExecute());
+        System.out.println("Okunabilinir mi "+file.canRead());
+        System.out.println("Yazılabilinir mi "+file.canWrite());
+        System.out.println("Dosya mi "+file.isFile());
+        System.out.println("Dizin mi "+file.isDirectory());
+        System.out.println("Parent mi "+file.getParent());
+        System.out.println("Gizli mi "+file.isHidden());
+        System.out.println("Free HDD mi "+file.getFreeSpace());
+        System.out.println("getTotalSpace mi "+file.getTotalSpace());
     }
 
     public static void main(String[] args) {
         FilePathDataImplement filePathDataImplement = new FilePathDataImplement();
-        filePathDataImplement.logTechFileWriter("root","passwd");
-        filePathDataImplement.logTechFileReader();
+        //filePathDataImplement.logTechFileWriter("root","passwd");
+        // filePathDataImplement.logTechFileReader();
+        //filePathDataImplement.logTechFileList();
+        //filePathDataImplement.logTechFileCreate("C:\\io\\techcareer\\deneme.log");
+        //filePathDataImplement.logTechFileDelete();
+        filePathDataImplement.logTechFileInformation();
 
     }
 }
